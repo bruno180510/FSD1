@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fondo de Fútbol Aleatorio</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>⚽ Bienvenido al mundo del fútbol ⚽</h1>
+
+<script>
+  // Lista de imágenes de fútbol (podés agregar más)
+  const imagenes = [
+    "https://images.unsplash.com/photo-1518091043644-c1d4457512c6",
+    "https://images.unsplash.com/photo-1508098682722-e99c643e7f0b",
+    "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a",
+    "https://images.unsplash.com/photo-1505842465776-3d90f6163106",
+    "https://images.unsplash.com/photo-1521417531039-0b4f8d1f5e36"
+  ];
+
+  // Elegir una imagen al azar
+  const imagenRandom = imagenes[Math.floor(Math.random() * imagenes.length)];
+
+  // Aplicar como fondo
+  document.body.style.backgroundImage = `url('${imagenRandom}')`;
+</script>
+
+</body>
+</html>
